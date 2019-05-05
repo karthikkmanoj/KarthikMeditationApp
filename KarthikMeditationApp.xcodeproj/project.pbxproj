@@ -7,21 +7,39 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		68C7D5F79726BC420F4B2585 /* Pods_KarthikMeditationApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFED805EF8D8890DC6343C5C /* Pods_KarthikMeditationApp.framework */; };
+		DA13C898227D483F00DACC2D /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA13C897227D483F00DACC2D /* Model.swift */; };
+		DA5E43BA227D75BC00FA5E00 /* MeditationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5E43B9227D75BC00FA5E00 /* MeditationViewController.swift */; };
+		DA73FE62227EAA00005DC2C1 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = DA73FE61227EAA00005DC2C1 /* data.json */; };
+		DA84710E227DE942000F95CA /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA84710D227DE942000F95CA /* SplashViewController.swift */; };
+		DAB4175B227C646E0046F829 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB4175A227C646E0046F829 /* MainViewController.swift */; };
+		DAB4175D227C67CD0046F829 /* MainCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB4175C227C67CD0046F829 /* MainCollectionViewCell.swift */; };
 		DAFEC3B8227B1F0400300F6B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFEC3B7227B1F0400300F6B /* AppDelegate.swift */; };
-		DAFEC3BA227B1F0400300F6B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFEC3B9227B1F0400300F6B /* ViewController.swift */; };
-		DAFEC3BD227B1F0400300F6B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAFEC3BB227B1F0400300F6B /* Main.storyboard */; };
+		DAFEC3BA227B1F0400300F6B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFEC3B9227B1F0400300F6B /* LoginViewController.swift */; };
 		DAFEC3BF227B1F0600300F6B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAFEC3BE227B1F0600300F6B /* Assets.xcassets */; };
 		DAFEC3C2227B1F0600300F6B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAFEC3C0227B1F0600300F6B /* LaunchScreen.storyboard */; };
+		DAFEC3CA227C0CD500300F6B /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFEC3C9227C0CD500300F6B /* Helpers.swift */; };
+		DAFEC3CC227C17D400300F6B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DAFEC3CB227C17D400300F6B /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4115F49171DB2C05B9C0E6B0 /* Pods-KarthikMeditationApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KarthikMeditationApp.debug.xcconfig"; path = "Target Support Files/Pods-KarthikMeditationApp/Pods-KarthikMeditationApp.debug.xcconfig"; sourceTree = "<group>"; };
+		769DA88FBB223848E16DBF81 /* Pods-KarthikMeditationApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KarthikMeditationApp.release.xcconfig"; path = "Target Support Files/Pods-KarthikMeditationApp/Pods-KarthikMeditationApp.release.xcconfig"; sourceTree = "<group>"; };
+		DA13C897227D483F00DACC2D /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		DA5E43B9227D75BC00FA5E00 /* MeditationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeditationViewController.swift; sourceTree = "<group>"; };
+		DA73FE61227EAA00005DC2C1 /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
+		DA84710D227DE942000F95CA /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		DAB4175A227C646E0046F829 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		DAB4175C227C67CD0046F829 /* MainCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCollectionViewCell.swift; sourceTree = "<group>"; };
 		DAFEC3B4227B1F0400300F6B /* KarthikMeditationApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KarthikMeditationApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAFEC3B7227B1F0400300F6B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DAFEC3B9227B1F0400300F6B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		DAFEC3BC227B1F0400300F6B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DAFEC3B9227B1F0400300F6B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		DAFEC3BE227B1F0600300F6B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DAFEC3C1227B1F0600300F6B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DAFEC3C3227B1F0600300F6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DAFEC3C9227C0CD500300F6B /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		DAFEC3CB227C17D400300F6B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		FFED805EF8D8890DC6343C5C /* Pods_KarthikMeditationApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KarthikMeditationApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +47,75 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68C7D5F79726BC420F4B2585 /* Pods_KarthikMeditationApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		41A4E5D50090DC80B5027087 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FFED805EF8D8890DC6343C5C /* Pods_KarthikMeditationApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4C92EFBA441891E258CEA5B0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4115F49171DB2C05B9C0E6B0 /* Pods-KarthikMeditationApp.debug.xcconfig */,
+				769DA88FBB223848E16DBF81 /* Pods-KarthikMeditationApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		DA73FE64227EB444005DC2C1 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				DAFEC3B9227B1F0400300F6B /* LoginViewController.swift */,
+				DAB4175A227C646E0046F829 /* MainViewController.swift */,
+				DA5E43B9227D75BC00FA5E00 /* MeditationViewController.swift */,
+				DA84710D227DE942000F95CA /* SplashViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		DA73FE65227EB460005DC2C1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DA13C897227D483F00DACC2D /* Model.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DA73FE66227EB46D005DC2C1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DAB4175C227C67CD0046F829 /* MainCollectionViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DA73FE67227EB483005DC2C1 /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				DA73FE61227EAA00005DC2C1 /* data.json */,
+				DAFEC3C9227C0CD500300F6B /* Helpers.swift */,
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
 		DAFEC3AB227B1F0400300F6B = {
 			isa = PBXGroup;
 			children = (
+				DAFEC3C3227B1F0600300F6B /* Info.plist */,
+				DAFEC3CB227C17D400300F6B /* GoogleService-Info.plist */,
 				DAFEC3B6227B1F0400300F6B /* KarthikMeditationApp */,
 				DAFEC3B5227B1F0400300F6B /* Products */,
+				4C92EFBA441891E258CEA5B0 /* Pods */,
+				41A4E5D50090DC80B5027087 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,11 +131,12 @@
 			isa = PBXGroup;
 			children = (
 				DAFEC3B7227B1F0400300F6B /* AppDelegate.swift */,
-				DAFEC3B9227B1F0400300F6B /* ViewController.swift */,
-				DAFEC3BB227B1F0400300F6B /* Main.storyboard */,
+				DA73FE65227EB460005DC2C1 /* Model */,
+				DA73FE64227EB444005DC2C1 /* View Controllers */,
+				DA73FE67227EB483005DC2C1 /* Others */,
+				DA73FE66227EB46D005DC2C1 /* View */,
 				DAFEC3BE227B1F0600300F6B /* Assets.xcassets */,
 				DAFEC3C0227B1F0600300F6B /* LaunchScreen.storyboard */,
-				DAFEC3C3227B1F0600300F6B /* Info.plist */,
 			);
 			path = KarthikMeditationApp;
 			sourceTree = "<group>";
@@ -71,9 +148,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DAFEC3C6227B1F0600300F6B /* Build configuration list for PBXNativeTarget "KarthikMeditationApp" */;
 			buildPhases = (
+				0D3B91A4DCCB59020DE0E249 /* [CP] Check Pods Manifest.lock */,
 				DAFEC3B0227B1F0400300F6B /* Sources */,
 				DAFEC3B1227B1F0400300F6B /* Frameworks */,
 				DAFEC3B2227B1F0400300F6B /* Resources */,
+				F4DAE6EA58D5420DC7B5B4D6 /* [CP] Embed Pods Frameworks */,
+				026C9F6A8E49AB16A25A30A2 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -122,35 +202,125 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA73FE62227EAA00005DC2C1 /* data.json in Resources */,
 				DAFEC3C2227B1F0600300F6B /* LaunchScreen.storyboard in Resources */,
+				DAFEC3CC227C17D400300F6B /* GoogleService-Info.plist in Resources */,
 				DAFEC3BF227B1F0600300F6B /* Assets.xcassets in Resources */,
-				DAFEC3BD227B1F0400300F6B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		026C9F6A8E49AB16A25A30A2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KarthikMeditationApp/Pods-KarthikMeditationApp-resources.sh",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KarthikMeditationApp/Pods-KarthikMeditationApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0D3B91A4DCCB59020DE0E249 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KarthikMeditationApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F4DAE6EA58D5420DC7B5B4D6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KarthikMeditationApp/Pods-KarthikMeditationApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BoringSSL-GRPC/openssl_grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-C++/grpcpp.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/lottie-ios/Lottie.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl_grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpcpp.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Lottie.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KarthikMeditationApp/Pods-KarthikMeditationApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DAFEC3B0227B1F0400300F6B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DAFEC3BA227B1F0400300F6B /* ViewController.swift in Sources */,
+				DAFEC3CA227C0CD500300F6B /* Helpers.swift in Sources */,
+				DAFEC3BA227B1F0400300F6B /* LoginViewController.swift in Sources */,
+				DAB4175D227C67CD0046F829 /* MainCollectionViewCell.swift in Sources */,
+				DA13C898227D483F00DACC2D /* Model.swift in Sources */,
+				DA5E43BA227D75BC00FA5E00 /* MeditationViewController.swift in Sources */,
 				DAFEC3B8227B1F0400300F6B /* AppDelegate.swift in Sources */,
+				DAB4175B227C646E0046F829 /* MainViewController.swift in Sources */,
+				DA84710E227DE942000F95CA /* SplashViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		DAFEC3BB227B1F0400300F6B /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DAFEC3BC227B1F0400300F6B /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		DAFEC3C0227B1F0600300F6B /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -280,16 +450,21 @@
 		};
 		DAFEC3C7227B1F0600300F6B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4115F49171DB2C05B9C0E6B0 /* Pods-KarthikMeditationApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = KarthikMeditationApp/Info.plist;
+				DEVELOPMENT_TEAM = WY34NNF7A7;
+				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = karthikkmanoj.KarthikMeditationApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -297,16 +472,21 @@
 		};
 		DAFEC3C8227B1F0600300F6B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 769DA88FBB223848E16DBF81 /* Pods-KarthikMeditationApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = KarthikMeditationApp/Info.plist;
+				DEVELOPMENT_TEAM = WY34NNF7A7;
+				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = karthikkmanoj.KarthikMeditationApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

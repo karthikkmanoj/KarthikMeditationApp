@@ -7,16 +7,79 @@
 //
 
 import UIKit
+import Firebase
+import GoogleSignIn
+import SVProgressHUD
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
 
     var window: UIWindow?
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+
+        FirebaseApp.configure()
+        
+        GIDSignIn.sharedInstance()?.clientID =  FirebaseApp.app()?.options.clientID
+        
+        GIDSignIn.sharedInstance()?.delegate = self
+        
+        window = UIWindow(frame: UIScreen.main.bounds)
+        
+        window?.makeKeyAndVisible()
+        
+        let splashViewController = SplashViewController()
+    
+        window?.rootViewController = splashViewController
+        
         return true
+    }
+    
+
+    
+    func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
+        
+        if let error = error {
+            
+            print("Error", error.localizedDescription)
+            
+            return
+        }
+        
+        debugPrint("Successfully Logged into Google", user!)
+        
+        guard let idToken = user.authentication.idToken else { return }
+        
+        guard let accessToken = user.authentication.accessToken else { return }
+        
+        let credentials = GoogleAuthProvider.credential(withIDToken: idToken, accessToken: accessToken)
+        
+        Auth.auth().signInAndRetrieveData(with: credentials) { (authResult, error) in
+            
+            if let error = error { SVProgressHUD.dismiss(); debugPrint("Failed to Create FireBase User", error); return }
+        
+            guard let user = authResult?.user else { return }
+            
+            debugPrint("Successfully Logged into FireBase", user.uid)
+            
+            SVProgressHUD.dismiss()
+    
+            let mainViewController = MainViewController()
+            
+            let navigationController = UINavigationController(rootViewController: mainViewController)
+            
+            self.window?.rootViewController?.present(navigationController, animated: true, completion: nil)
+        
+            
+        }
+    }
+    
+    func application(_ application: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any])
+        -> Bool {
+            
+            return GIDSignIn.sharedInstance().handle(url,sourceApplication:options[UIApplication.OpenURLOptionsKey.sourceApplication] as? String,
+                                                     annotation: [:])
     }
 
     func applicationWillResignActive(_ application: UIApplication) {
