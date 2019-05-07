@@ -293,6 +293,11 @@ extension MeditationViewController {
             
             let seconds = CMTimeGetSeconds(progrssTime)
             
+            guard !(seconds.isNaN || seconds.isInfinite) else {
+                print("Error converting seconds")
+                return  // or do some error handling
+            }
+            
             let secondsString = String(format: "%02d", Int(seconds) % 60)
             
             let minutesString = String(format : "%02d", Int(seconds) / 60)
@@ -326,6 +331,11 @@ extension MeditationViewController {
             if let duration = player.currentItem?.duration {
                 
                 let seconds = CMTimeGetSeconds(duration)
+                
+                guard !(seconds.isNaN || seconds.isInfinite) else {
+                    print("Error converting seconds")
+                    return  // or do some error handling
+                }
                 
                 let secondsText = Int(seconds) % 60
                 

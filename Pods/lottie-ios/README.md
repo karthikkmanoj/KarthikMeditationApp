@@ -1,6 +1,6 @@
 # Lottie for iOS, macOS (and [Android](https://github.com/airbnb/lottie-android) and [React Native](https://github.com/airbnb/lottie-react-native))
 [![Version](https://img.shields.io/cocoapods/v/lottie-ios.svg?style=flat)](https://cocoapods.org/pods/lottie-ios)[![License](https://img.shields.io/cocoapods/l/lottie-ios.svg?style=flat)](https://cocoapods.org/pods/lottie-ios)[![Platform](https://img.shields.io/cocoapods/p/lottie-ios.svg?style=flat)](https://cocoapods.org/pods/lottie-ios)
->  ==**Announcement**==: As of 3.0 Lottie has been completely rewritten in Swift 4.0! For Objective-C support please use Lottie 2.5.3. Read Migration doc [Here](/Documentation/MIGRATING.md)
+>  ==**Announcement**==: As of 3.0 Lottie has been completely rewritten in Swift 4.2! For Objective-C support please use Lottie 2.5.3. Read Migration doc [Here](/Documentation/MIGRATING.md).
 
 Lottie is a mobile library for Android and iOS that natively renders vector based animations and art in realtime with minimal code.
 
@@ -56,7 +56,7 @@ Here is just a small sampling of the power of Lottie
 - [Contributing](#contributing)
 - [Issues or Feature Requests?](#issues-or-feature-requests)
 ## Installing Lottie
-Lottie supports [CocoaPods](https://cocoapods.org/) and  [Carthage](https://github.com/Carthage/Carthage) (Both dynamic and static). Lottie is written in ***Swift 4.0***
+Lottie supports [CocoaPods](https://cocoapods.org/) and [Carthage](https://github.com/Carthage/Carthage) (Both dynamic and static). Lottie is written in ***Swift 4.2***.
 ### Github Repo
 
 You can pull the [Lottie Github Repo](https://github.com/airbnb/lottie-ios/) and include the Lottie.xcodeproj to build a dynamic or static library.
@@ -617,9 +617,9 @@ Lottie comes prepacked with a two Animated Controls, `AnimatedSwitch` and `Anima
 
 `AnimatedControl` is a subclass of `UIControl` that provides an interactive mechanism for controlling the visual state of an animation in response to user actions.
 
-The `AnimatedControl` will show and hide layers depending on the current `UIControlState` of the control.
+The `AnimatedControl` will show and hide layers depending on the current `UIControl.State` of the control.
 
-Users of `AnimationControl` can set a Layer Name for each `UIControlState`. When the state is change the `AnimationControl` will change the visibility of its layers.
+Users of `AnimationControl` can set a Layer Name for each `UIControl.State`. When the state is change the `AnimationControl` will change the visibility of its layers.
 
 [Back to contents](#contents)
 ## Animated Switch
@@ -642,16 +642,16 @@ public func setProgressForState(fromProgress: AnimationProgressTime,
 ![HeartButton](_Gifs/HeartButton.gif)
 
 An interactive button that plays an animation when pressed.
-The `AnimatedButton` can play a variety of time ranges for different `UIControlEvents`.  Play ranges are set using either:
+The `AnimatedButton` can play a variety of time ranges for different `UIControl.Event`.  Play ranges are set using either:
 ```swift
 /// Set a play range with Progress Time.
 public func setPlayRange(fromProgress: AnimationProgressTime, 
 		toProgress: AnimationProgressTime, 
-		event: UIControlEvents)
+		event: UIControl.Event)
 /// Set a play range with Marker Keys.
 public func setPlayRange(fromMarker fromName: String, 
 		toMarker toName: String, 
-		event: UIControlEvents)
+		event: UIControl.Event)
 ```
 Once set the  animation will automatically play when the event is triggered.
 
